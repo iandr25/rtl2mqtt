@@ -20,8 +20,8 @@ LABEL Description="This image is used to start a script that will monitor for ev
 #
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
-RUN apt-get update && apt-get install -y \
-  rtl-sdr \
+RUN apt-get update && apt-get install -y 
+RUN  rtl-sdr \
   librtlsdr-dev \
   librtlsdr0 \
   git \
